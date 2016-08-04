@@ -19,7 +19,16 @@ module MoviesHelper
     if movie.average_stars.nil?
       content_tag(:strong, 'No reviews')
     else
-      image_tag('Gold-Rating-Stars.png', class: 'average-stars')
+      image_tag('Gold-Rating-Stars.png', 
+                    class: 'average-stars',
+                    style: "object-fit: none; width: #{movie.average_stars / 5 * 136}px; height: 27px; object-position: 0 0; float: none; margin: 0; border: none"
+                )      
+    end
+  end
+
+  def format_average_stars_text(movie)
+    unless movie.average_stars.nil?
+      "#{movie.average_stars.round(1)}/5"
     end
   end
 

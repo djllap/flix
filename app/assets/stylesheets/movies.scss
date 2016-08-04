@@ -19,10 +19,15 @@ article#movie {
     line-height: 1.25em;
   }
 
-  h2 {
+  #released {
     margin: .5em 0;
+    padding-left: .5em;
     font-size: 115%;
     color: $secondary-text-color;
+  }
+
+  #stars {
+    padding: .5em 0;
   }
 
   h3 {
@@ -34,6 +39,12 @@ article#movie {
     &.no-rule {
       border: none;
     }
+  }
+
+  #rating {
+    font-size: 140%;
+    font-weight: bold;
+    margin-left: 1em;
   }
 
   img {
@@ -70,6 +81,12 @@ ul#movies {
       margin-bottom: 0px;
     }
 
+    #rating {
+    font-size: 140%;
+    font-weight: bold;
+    margin-left: 1em;
+    }
+
     p {
       margin: .5em 0;
       font-size: 1.15em;
@@ -91,14 +108,12 @@ ul#movies {
       margin: 0 0 0 20px;
       border: 3px solid $subdued-color;
 
-      .stars {
+      &.average-stars {
         float: none;
         margin: 0;
         border: none;
-        object-fit: none;
-        width: 136px;
-        height: 27px;
       }
+      
     }
 
     table {
@@ -171,28 +186,7 @@ ol#reviews {
 
     span {
       &.review {
-        font-weight: bold;
-          img{
-            object-fit: none;
-            width: 136px;
-            height: 27px;
-
-            &.one-star {
-                      object-position: 0 -110px
-                    }
-            &.two-star {
-                      object-position: 0 -81px
-                    }
-            &.three-star {
-                      object-position: 0 -54px
-                    }
-            &.four-star {
-                      object-position: 0 -27px
-                    }
-            &.five-star {
-                      object-position: 0 0
-                    }                           
-          }
+        font-weight: bold;          
       }
       &.user {
         font-weight: normal;

@@ -5,6 +5,14 @@
         <header>
           <%= image_for(movie) %>
           <h2><%= link_to movie.title, movie %> (<%= movie.released_on.year %>)</h2>
+          <div>
+            <span id="stars">
+              <%= format_average_stars(movie) %>
+            </span>
+            <span id="rating">
+              <%= format_average_stars_text(movie) %>      
+            </span>
+          </div>
           <h3><%= movie.cast %></h3>
         </header>
         <p>

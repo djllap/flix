@@ -2,11 +2,15 @@
   <header>
     <%= image_for(@movie) %>
     <h1><%= @movie.title %></h1>
-    <h2>
-      <%= format_average_stars(@movie) %>
-    </h2>
+    <div>
+      <span id="stars">
+        <%= format_average_stars(@movie) %>
+      </span>
+      <span id="rating">
+        <%= format_average_stars_text(@movie) %>      
+      </span>
+    </div>
     <h2>Released: <%= @movie.released_on %></h2>
-    
   </header>
 
   
@@ -39,7 +43,7 @@
     <ol id="reviews">
       <% @movie.recent_reviews.each do |review| %>
         <li>
-          <span class="review"><%= pluralize(review.stars, 'star') %></span>
+          <span class="review"><%= show_stars(review) %></span>
           <span class="user">by <%= review.name %></span>
           <span class="date"><%= time_ago_in_words(review.created_at) %> ago</span>
           <p>

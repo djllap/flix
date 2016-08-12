@@ -1,0 +1,16 @@
+<h1><%= @genre.name.capitalize %> Movies</h1>
+
+<ul id="movies">
+  <% if @movies.any? %>
+    <% @movies.each do |movie| %>
+      <article class="movie">
+        <li>
+          <h2><%= link_to movie.title, movie %></h2>
+        </li>
+      </article>
+    <% end %>
+  <% else %>
+    <p>There are no movies listed in this genre.</p>
+  <% end %>
+    
+</ul>

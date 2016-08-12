@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Flix is a movie review web app designed while going through the Rails I and Rails II courses from Pragmatic Studios.  The appp is deployed on heroku named flixtor.
 
-Things you may want to cover:
+https://flixtor.herokuapp.com/
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

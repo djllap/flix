@@ -17,7 +17,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
     if @user.save
       session[:user_id] = @user.id
       redirect_to @user, notice: "Account successfully created."
@@ -27,6 +26,7 @@ class UsersController < ApplicationController
   end
 
   def edit
+
   end
 
   def update
@@ -54,7 +54,7 @@ params.require(:user).
 end
 
 def require_correct_user
-  @user = User.find(params[:id])
+  @user = User.find_by!(username: params[:id])
   unless current_user?(@user)
     redirect_to root_url
   end

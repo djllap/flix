@@ -40,7 +40,10 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (7.1.1)
+<<<<<<< HEAD
     bcrypt (3.1.11)
+=======
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
     builder (3.2.2)
     byebug (9.0.5)
     capybara (2.7.1)
@@ -185,7 +188,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
   bcrypt (~> 3.1.7)
+=======
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
   byebug
   capybara (= 2.7.1)
   coffee-rails (~> 4.2)

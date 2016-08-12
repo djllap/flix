@@ -6,7 +6,11 @@
   <% @reviews.each do |review| %>
     <li>
       <span class="review"><%= show_stars(review) %></span>
+<<<<<<< HEAD
       <span class="user">by <%= link_to review.user.name, review.user %></span>
+=======
+      <span class="user">by <%= review.name %></span>
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
       <span class="date"><%= time_ago_in_words(review.created_at) %> ago</span>
       <p>
         &quot;<%= review.comment %>&quot;

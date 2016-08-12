@@ -104,6 +104,7 @@ Movie.create!([
   }
 ])
 
+<<<<<<< HEAD
 Genre.create!(name: "Action")
 Genre.create!(name: "Comedy")
 Genre.create!(name: "Drama")
@@ -117,6 +118,8 @@ Genre.create!(name: "Sci-Fi")
 Genre.create!(name: "Horror")
 
 
+=======
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
 movie = Movie.find_by(title: 'Iron Man')
 movie.reviews.create!(name: "Roger Ebert", stars: 3, comment: "I laughed, I cried, I spilled my popcorn!")
 movie.reviews.create!(name: "Gene Siskel", stars: 5, comment: "I'm a better reviewer than he is.")

@@ -1,8 +1,11 @@
 class ReviewsController < ApplicationController
 
   before_action :set_movie
+<<<<<<< HEAD
   before_action :require_signin
 
+=======
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
   def index
     @reviews = @movie.reviews
   end
@@ -13,8 +16,11 @@ class ReviewsController < ApplicationController
 
   def create
     @review = @movie.reviews.new(review_params)
+<<<<<<< HEAD
     @review.user = current_user
 
+=======
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
     if @review.save
       redirect_to movie_reviews_path(@movie),
                 notice: "Thanks for your review!"
@@ -47,9 +53,17 @@ end
 private
 
 def review_params
+<<<<<<< HEAD
   params.require(:review).permit(:comment, :stars)
 end
 
 def set_movie
   @movie = Movie.find_by!(slug: params[:movie_id])
+=======
+  params.require(:review).permit(:name, :comment, :stars)
+end
+
+def set_movie
+  @movie = Movie.find(params[:movie_id])
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
 end

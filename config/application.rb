@@ -25,6 +25,9 @@ module Flix
       ActiveRecord::Base.connection
     end
   end
+<<<<<<< HEAD
 
   
+=======
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
 end

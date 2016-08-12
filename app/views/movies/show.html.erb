@@ -1,15 +1,23 @@
+<<<<<<< HEAD
 <% title("#{@movie.title} (#{@movie.released_on.year})") %>
 
+=======
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
 <article id="movie" class="movie">
   <header>
     <%= image_for(@movie) %>
     <h1><%= @movie.title %></h1>
+<<<<<<< HEAD
+=======
+    <div>
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
       <span id="stars">
         <%= format_average_stars(@movie) %>
       </span>
       <span id="rating">
         <%= format_average_stars_text(@movie) %>      
       </span>
+<<<<<<< HEAD
 
       <h2>Released: <%= @movie.released_on %></h2>
 
@@ -26,6 +34,15 @@
   </header>
 
   <p class="description">
+=======
+    </div>
+    <h2>Released: <%= @movie.released_on %></h2>
+  </header>
+
+  
+
+  <p>
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
     <%= @movie.description %>
   </p>
   
@@ -54,7 +71,11 @@
       <% @movie.recent_reviews.each do |review| %>
         <li>
           <span class="review"><%= show_stars(review) %></span>
+<<<<<<< HEAD
           <span class="user">by <%= review.user.name %></span>
+=======
+          <span class="user">by <%= review.name %></span>
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
           <span class="date"><%= time_ago_in_words(review.created_at) %> ago</span>
           <p>
             &quot;<%= review.comment %>&quot;
@@ -78,6 +99,7 @@
     <nav>
       <%= link_to 'Write Review', new_movie_review_path(@movie), 
                   class: 'button ok review' %>
+<<<<<<< HEAD
       <% if current_user_admin? %>      
         <%= link_to 'Edit', edit_movie_path(@movie), class: 'button' %>
         <%= link_to 'Delete', @movie, 
@@ -114,3 +136,12 @@
         <p>There are no listed genres for <%= @movie.title %></p>
       <% end %>
     <% end %> 
+=======
+      <%= link_to 'Edit', edit_movie_path(@movie), class: 'button' %>
+      <%= link_to 'Delete', @movie, 
+                  class: 'button',
+                  method: :delete, data: { confirm: "Are you sure you want to delete #{@movie.title}?"} %>      
+    </nav>
+  </footer>
+</article>
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1

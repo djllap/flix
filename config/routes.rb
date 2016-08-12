@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :genres
   root "movies#index"
 
@@ -12,5 +13,10 @@ Rails.application.routes.draw do
   resources :movies do
     resources :reviews
     resources :favorites    
+=======
+  root "movies#index"
+  resources :movies do
+    resources :reviews
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
   end
 end

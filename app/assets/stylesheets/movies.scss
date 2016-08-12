@@ -17,12 +17,15 @@ article#movie {
     padding: .5em 0;
     font-size: 1.15em;
     line-height: 1.25em;
+<<<<<<< HEAD
 
     &.description {
       background-color: lighten($secondary-background-color, 35%);
       border-radius: 1em;
       padding: 1.5em;
     }
+=======
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
   }
 
   #released {

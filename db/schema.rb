@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160802054924) do
 
   create_table "characterizations", force: :cascade do |t|
@@ -36,6 +37,9 @@ ActiveRecord::Schema.define(version: 20160802054924) do
     t.string   "name"
     t.string   "slug"
   end
+=======
+ActiveRecord::Schema.define(version: 20160526220418) do
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
 
   create_table "movies", force: :cascade do |t|
     t.string   "title"
@@ -49,15 +53,23 @@ ActiveRecord::Schema.define(version: 20160802054924) do
     t.string   "director"
     t.string   "duration"
     t.string   "image_file_name", default: ""
+<<<<<<< HEAD
     t.string   "slug"
   end
 
   create_table "reviews", force: :cascade do |t|
+=======
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.string   "name"
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
     t.integer  "stars"
     t.text     "comment"
     t.integer  "movie_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
     t.integer  "user_id"
     t.index ["movie_id"], name: "index_reviews_on_movie_id"
   end
@@ -72,4 +84,9 @@ ActiveRecord::Schema.define(version: 20160802054924) do
     t.boolean  "admin",           default: false
   end
 
+=======
+    t.index ["movie_id"], name: "index_reviews_on_movie_id"
+  end
+
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
 end

@@ -1,4 +1,8 @@
 class Review < ApplicationRecord
+<<<<<<< HEAD
+=======
+  validates :name, presence: true
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
 
   validates :comment, length: { minimum: 4 }
 
@@ -10,5 +14,8 @@ class Review < ApplicationRecord
   }
   
   belongs_to :movie
+<<<<<<< HEAD
   belongs_to :user
+=======
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
 end

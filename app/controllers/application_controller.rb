@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+<<<<<<< HEAD
 
   def require_signin
     unless current_user
@@ -31,4 +32,6 @@ class ApplicationController < ActionController::Base
   end
 
   helper_method :current_user_admin?
+=======
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
 end

@@ -2,6 +2,7 @@
   <nav>
     <ul>
       <li class="all-movies">
+<<<<<<< HEAD
         <%= link_to 'Released', movies_path, class: 'button active' %>
       </li>
       <li class="all-movies">
@@ -25,4 +26,13 @@
   </nav>
 
   <%= content_for(:side) %>
+=======
+        <%= link_to 'All Movies', movies_path, class: 'button' %>
+      </li>
+      <li class="create-movie">
+        <%= link_to 'Add New Movie', new_movie_path, class: 'button' %>
+      </li>
+    </ul>
+  </nav>
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
 </aside>

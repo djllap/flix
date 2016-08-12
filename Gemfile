@@ -3,6 +3,11 @@ ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -23,7 +28,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
+<<<<<<< HEAD
 gem 'bcrypt', '~> 3.1.7'
+=======
+# gem 'bcrypt', '~> 3.1.7'
+>>>>>>> 96de389ec1526b170b51680e81306b21b04dcdd1
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
